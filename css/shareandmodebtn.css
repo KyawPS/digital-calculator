@@ -1,0 +1,168 @@
+
+/*Start of Share Button*/
+
+.share-btn{
+    /*background-color: var(--primary-color);*/
+    width: 70px;
+    height: 70px;
+    /*border-radius: 100%;*/
+
+    position: absolute;
+    top: 488px;
+    left: 50px;
+
+    Z-index: 100;
+}
+
+.share-btn a{
+    background-color: var(--primary-color);
+    color: #000000;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-decoration: none;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.3s;
+
+    overflow : hidden;
+
+    z-index: 5;
+
+}
+
+.share-btn a:nth-of-type(1),
+.share-btn a:nth-of-type(2),
+.share-btn a:nth-of-type(3){
+
+    /*background-color: #2b2b2b;*/
+    filter:blur(700);
+
+    transition-delay: 0.3s;
+}
+
+.share-btn:hover a:nth-child(1){
+
+    background-color: var(--fb-color);
+    top : 50%;
+    left : 110px;
+
+    z-index: 3;
+
+    transition-delay: 0s;
+
+}
+
+
+.share-btn:hover a:nth-child(2){
+
+    background-color: var(--linkin-color);
+    top : 100px;
+    left : 70px;
+
+    z-index: 2;
+
+    transition-delay: 0.1s;
+}
+
+
+.share-btn:hover a:nth-child(3){
+
+    background-color: var(--tele-color);
+    top : -30px;
+    left : 70px;
+
+    z-index : 1 ;
+
+    transition-delay: 0.2s;
+}
+
+
+/*.share-btn a i{*/
+
+/*    display: block;*/
+/*    color: var(--third-color);*/
+/*    font-size: 25px;*/
+/*    text-align: center;*/
+/*    line-height: 50px;*/
+
+/*    transition: 0.3s;*/
+/*}*/
+
+.share-btn a img{
+    width: 50%;
+    height: 50%;
+    /*background-color: var(--primary-color);*/
+    /*border-radius: 50%;*/
+
+}
+
+/*End of Share Button*/
+
+/*Start of Theme Mode Button*/
+.changemodebox{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 135px;
+    right: 5%;
+}
+
+/*.changemodebox label{*/
+/*    cursor: pointer;*/
+/*}*/
+
+.container{
+
+    background-color: var(--primary-color);
+
+    width: 80px;
+    height: 30px;
+    border-radius: 50px;
+    outline: 3px solid #000;
+
+    padding: 5px;
+    margin: 20px;
+
+    cursor:pointer;
+
+    transition: all 0.3s;
+}
+
+.container input{
+    display: none;
+}
+
+.container .ball{
+
+    display: inline-block;
+    background-color: var(--third-color);
+
+    width: 20px;
+    height: 20px;
+
+    outline: 3px solid #000;
+    border-radius: 100%;
+
+    cursor: pointer;
+
+    transition: all 0.3s;
+}
+
+.ball.active{
+    background-color: red;
+    transform: translateX(50px);
+}
+
+/*End of Theme Mode Button*/

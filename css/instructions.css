@@ -1,0 +1,104 @@
+.instruction-box{
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+/*    margin-top: 100px;*/
+    padding : 200px;
+}
+
+.instruction-box .box{
+    width: 1072px;
+    height: 444px;
+
+    display: flex;
+    /*justify-content: space-between;*/
+}
+
+.cal-logo{
+    width: 40%;
+
+}
+
+.callogo{
+    width: 60%;
+    height: 70%;
+}
+
+.cal-logo{
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.instruction{
+    width: 60%;
+
+    color: var(--third-color);
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.instruction h3{
+
+    font-size: 1.5em;
+    font-weight: 500;
+
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+
+.instruction p{
+
+    font-size: 1.2em;
+
+    margin: 0;
+    padding: 0;
+
+}
+
+.instruction .comment .comment-area{
+
+    display: block;
+    width: 300px;
+    height: 150px;
+    font-size: 16px;
+    font-style: normal;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 30px;
+    resize: none;
+}
+
+.instruction .comment .comment-area::placeholder{
+    font-style: italic;
+}
+
+.instruction .comment .comment-area:focus{
+    outline: none;
+}
+
+.instruction .comment .post-btn{
+
+    display: inline-block;
+    width: 130px;
+    height: 45px;
+    background-color: var(--third-color);
+    font-size: 20px;
+    font-weight: 600;
+    border: 0;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.btn:focus{
+    outline: none;
+}
+
